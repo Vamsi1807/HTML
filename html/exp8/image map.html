@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Image maps</title>
+        <link re="stylesheet" href="styles.css">
+        <style>
+            .body{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body class="body">
+
+        <h1 style="color:brown;text-align: center;">Dog along with a Cat</h1> 
+
+        <div style="text-align: center;">
+            <img src="c:\Users\a\Desktop\dog and cat.jpg" usemap="#image_map" class="img">
+        </div>
+
+        <map name="image_map">
+            <area alt="cat" target="_blank" title="cat" href="https://en.wikipedia.org/wiki/Cat" coords="32,82,102,176" shape="rect">
+            <area alt="dog" target="_blank" title="dog" href="https://en.wikipedia.org/wiki/Dog" coords="102,23,248,182" shape="rect">
+        </map>
+        
+        <p class="info">Clicking on "DOG" redirects to info about dogs and "CAT" is also same..</p>
+    </body>
+</html>

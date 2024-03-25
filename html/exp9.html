@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>various css</title>
+        <style>
+            .p1{
+                font-size: 30px;
+                color: white;
+                text-shadow: 3px 3px 4px black;
+            }
+
+            .p2{
+                box-shadow: 3px 3px 2px rgb(215, 156, 156);
+                background-image: linear-gradient(red,yellow);
+                width: 100px;
+            }
+
+            .p3{
+                box-shadow: 3px 3px 2px rgb(215, 156, 156);
+                background-image: radial-gradient(red,yellow);
+                width: 100px;
+            }
+
+            .anime{
+                animation-name: eg;
+                box-shadow: 3px 3px 2px rgb(215, 156, 156);
+                background-color: red;
+                width: 100px;
+                animation-duration: 4s;
+            }
+
+            @keyframes eg{
+                from{background-color: red;}
+                to{background-color: yellow;}
+            }
+
+            .tr{
+                height: 100px;
+                width: 200px;
+                font-size: 20px;
+                background-color: red;
+                transition: height 3s,width 3s,transform 3s;
+                animation-name: eg;
+            }
+
+            .tr:hover{
+                height: 200px;
+                width: 300px;
+                transform: rotate(180deg);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <p class="p1">Text with shadow....</p>
+
+        <div class="p2">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+
+        <div class="p3">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+
+        <div class="anime">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+
+        <div class="tr">
+            <p>Transition along with Transform</p>
+        </div>
+    </body>
+</html>
